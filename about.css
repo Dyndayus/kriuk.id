@@ -1,0 +1,159 @@
+/* VARIABEL & GLOBAL */
+:root {
+    --green-main: #828B72;
+    --green-dark: #4A5A2C;
+    --green-light: #CDEE77;
+    --bg-light: #F8F8F4;
+    --shadow-soft: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-light);
+}
+
+/*NAVBAR ATAS*/
+.navbar-atas {
+    background-color: #B9C5A5;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.20);
+}
+
+.gambar-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow:0 2px 12px rgba(0, 0, 0, 0.20);
+    object-fit: cover;
+}
+
+.navbar-nav {
+    gap: 60px;
+}
+
+.nav-link {
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-link::after {
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* HERO ABOUT */
+.about-hero {
+    background-color: var(--green-light);
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+}
+
+.about-hero h1 {
+    font-weight: 700;
+    color: var(--green-dark);
+}
+
+.about-hero p {
+    max-width: 700px;
+    margin: 15px auto 0;
+    font-size: 15px;
+    color: #444;
+}
+
+/* VALUE SECTION */
+.value-section {
+    padding: 40px 0;
+}
+
+.value-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e3e3e3;
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.3s ease;
+}
+
+.value-box:hover {
+    transform: translateY(-6px);
+}
+
+.value-box h2 {
+    color: var(--green-dark);
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.value-box p {
+    margin: 0;
+    color: #444;
+}
+
+/* OUR STORY SECTION */
+.about-detail {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.gambar-karyawan {
+    width: 70%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.20);
+    object-fit: cover;
+    max-width: 600px;
+}
+
+.about-text h3 {
+    font-weight: 700;
+    color: var(--green-dark);
+}
+
+.about-text p {
+    color: #444;
+    line-height: 1.6;
+}
+
+/* FOOTER*/
+.footer {
+    background-color: var(--green-main);
+    box-shadow: var(--shadow-soft);
+}
+
+/* RESPONSIVE*/
+@media (max-width: 768px) {
+    .about-detail {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-detail img {
+        width: 100%;
+    }
+
+    .value-box {
+        width: 80%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,157 @@
+/* VARIABEL & GLOBAL */
+:root {
+    --green-main: #828B72;
+    --green-dark: #4A5A2C;
+    --green-light: #CDEE77;
+    --bg-light: #F8F8F4;
+    --shadow-soft: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-light);
+    margin: 0;
+}
+
+/* NAVBAR ATAS */
+.navbar-atas {
+    background-color:#B9C5A5 ;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.20);
+}
+
+.gambar-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow:0 2px 12px rgba(0, 0, 0, 0.20);
+    object-fit: cover;
+}
+
+/* NAVBAR MENU */
+.navbar-nav {
+    gap: 60px;
+}
+
+.nav-link {
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-link::after {
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* BUTTON */
+.btn-hijau {
+    background: var(--green-main);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-soft);
+}
+
+.btn-hijau:hover {
+    background: #709346;
+}
+
+/* HERO KONTAK */
+.contact-hero {
+    background: var(--green-light);
+    padding: 40px 20px;
+    box-shadow: var(--shadow-soft);
+}
+
+.contact-hero h1 {
+    color: var(--green-dark);
+    font-weight: bold;
+}
+
+.contact-hero p {
+    max-width: 700px;
+    margin: 10px auto 0;
+    color: #444;
+}
+
+/* WRAPPER */
+.contact-wrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* BOX */
+.contact-box {
+    background: #fff;
+    width: 350px;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e3e3e3;
+    box-shadow: var(--shadow-soft);
+}
+
+/* FORM */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    min-height: 520px; 
+    justify-content: space-between;
+}
+
+
+.contact-form h3,
+.contact-info h3 {
+    color: var(--green-dark);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.contact-form textarea {
+    resize: none;
+    min-height: 180px;
+}
+
+/* INFO */
+.contact-info p {
+    margin-bottom: 12px;
+    color: #444;
+}
+
+.contact-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: var(--shadow-soft);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .contact-box {
+        width: 100%;
+    }
+}
+
+/* FOOTER */
+.footer {
+    background: var(--green-main);
+    box-shadow: var(--shadow-soft);
+}

@@ -1,0 +1,113 @@
+.pelanggan-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin: auto;
+}
+
+body {
+    background-color:#F8F8F4;
+}
+
+.navbar-atas {
+    background-color:#B9C5A5 ;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.20);
+}
+
+.navbar-nav {
+    gap: 60px;
+}
+
+.nav-link {
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-link::after {
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+.gambar-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow:0 2px 12px rgba(0, 0, 0, 0.20);
+    object-fit: cover;
+}
+
+
+.footer {
+    background-color: #828B72;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.20);
+}
+
+.card {
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.20);
+}
+
+.card img.card-img-top {
+  height: px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.ulasan-pelanggan-box {
+    background-color: #CDEE77; /* Warna hijau Bootstrap (success) */
+    padding-top: 2rem; 
+    padding-bottom: 2rem;
+}
+
+.card-ulasan {
+    width: 280px;
+    background-color: #ffffff; 
+}
+
+/* Style untuk gambar profil pelanggan */
+.pelanggan-img {
+    width: 150px; 
+    height:150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.kata-umkm-box{
+    background-color: #f6f6f6; /* Warna hijau Bootstrap (success) */
+    padding-top: 2rem; 
+    padding-bottom: 2rem;
+
+}
+.card-umkm{
+padding: auto;
+
+}
+.umkm-img {
+    width: 180px; /* Lebar gambar */
+    height: 180px; /* Tinggi harus sama dengan lebar */
+    object-fit: cover; /* Pastikan gambar terpotong untuk mengisi lingkaran */
+    margin-bottom: 1rem;
+    /* Ubah tampilan card-img-top agar tidak ada border default di atas body */
+    margin-top: 1rem; 
+}

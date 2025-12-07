@@ -1,0 +1,97 @@
+body {
+    background-color:#F8F8F4;
+}
+
+.form-check-input:checked {
+          background-color: green;
+          border-color: green;
+        }
+
+.navbar-atas {
+    background-color:#B9C5A5 ;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.20);
+}
+
+.gambar-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow:0 2px 12px rgba(0, 0, 0, 0.20);
+    object-fit: cover;
+}
+
+.navbar-nav {
+    gap: 60px;
+}
+
+.nav-link {
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-link::after {
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+
+/* Style input biasa */
+.form-control {
+  height: 40px;          /* tinggi standar */
+  line-height: 40px;     /* teks di tengah */
+  padding: 0 10px;       /* jarak kiri-kanan */
+  font-size: 15px;       /* ukuran teks */
+}
+
+/* Label di atas input */
+.form-floating label {
+  line-height: normal;   /* biar label tidak ikut tinggi input */
+  font-size: 13px;
+}
+
+
+.footer {
+    background-color: #828B72;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.20);
+}
+
+.navbar .nav-link.active {
+  font-weight: 600;
+}
+
+#notify {
+  position: center;
+  margin-top: 5px;
+  background: green;
+  color: rgb(255, 255, 255);
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: none; 
+}
+
+#notify.show {
+  display: block; 
+}
+
+.product-img {
+    max-width: 100%; 
+    height: auto;
+    width: 120px; 
+    max-height: 120px; 
+    display: block; 
+    object-fit: cover;
+}
